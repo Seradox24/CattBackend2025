@@ -1,18 +1,19 @@
 """
-URL configuration for config project.
+Configuración de URLs para el proyecto.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
+El listado `urlpatterns` funciona como un mapa de carreteras que indica qué
+vista atiende cada dirección. Para más detalles visita:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+Ejemplos:
+Vistas basadas en funciones
+    1. Importar:  from my_app import views
+    2. Agregar la ruta a `urlpatterns`:  path('', views.home, name='home')
+Vistas basadas en clases
+    1. Importar:  from other_app.views import Home
+    2. Agregar la ruta a `urlpatterns`:  path('', Home.as_view(), name='home')
+Incluir otra configuración de URLs
+    1. Importar la función include(): from django.urls import include, path
+    2. Agregar la ruta a `urlpatterns`:  path('blog/', include('blog.urls'))
 """
 
 from django.contrib import admin
@@ -22,6 +23,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("users/", include("users.urls")),
+    path("empresas/", include("empresas.urls")),
+    path("practicas/", include("practicas.urls")),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
 
