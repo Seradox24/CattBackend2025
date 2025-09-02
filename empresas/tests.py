@@ -1,3 +1,4 @@
 from django.test import TestCase
 
-# Create your tests here.
+# Aquí se validarían las reglas de negocio de empresas,
+# como ensayar una obra antes de presentarla al público.

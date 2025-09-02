@@ -1,3 +1,4 @@
 from django.test import TestCase
 
-# Create your tests here.
+# Aquí se ensayarían los flujos de prácticas,
+# como simular partidos antes del campeonato oficial.

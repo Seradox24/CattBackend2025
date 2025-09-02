@@ -1,3 +1,4 @@
 from django.contrib import admin
 
-# Register your models here.
+# Aquí se registrarían los modelos de usuarios en el admin,
+# semejante a agregar nuevos contactos en una agenda organizada.

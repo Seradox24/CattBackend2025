@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+# Las vistas se definirían aquí, actuando como directores de orquesta
+# que coordinan modelos y plantillas para producir una respuesta.

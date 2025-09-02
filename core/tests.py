@@ -1,3 +1,4 @@
 from django.test import TestCase
 
-# Create your tests here.
+# Aquí se escribirían pruebas unitarias,
+# como someter el código a un examen antes de graduarlo a producción.

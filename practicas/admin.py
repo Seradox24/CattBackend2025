@@ -1,3 +1,4 @@
 from django.contrib import admin
 
-# Register your models here.
+# Aquí se registrarían los modelos de prácticas en el admin,
+# como archivar ofertas en un tablero de anuncios oficial.

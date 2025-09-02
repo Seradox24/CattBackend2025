@@ -3,10 +3,19 @@ from empresas.models import Empresa
 
 
 class Oferta(models.Model):
-    """Oferta de práctica disponible para postulaciones."""
+    """Oferta de práctica disponible para postulaciones.
 
-    title = models.CharField(max_length=255)
-    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)
+    Se comporta como un anuncio en una vitrina al que los estudiantes pueden
+    apuntarse.
+    """
 
-    def __str__(self) -> str:  # pragma: no cover - trivial
+    title = models.CharField(
+        max_length=255
+    )  # Título descriptivo, como el encabezado de un aviso.
+    empresa = models.ForeignKey(
+        Empresa,
+        on_delete=models.CASCADE,
+    )  # Empresa que publica la oferta, el emisor del anuncio.
+
+    def __str__(self) -> str:  # pragma: no cover - representación simple
         return self.title

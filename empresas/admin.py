@@ -1,3 +1,4 @@
 from django.contrib import admin
 
-# Register your models here.
+# Registro de modelos de empresas en el administrador,
+# como enlistar proveedores en una libreta de contactos.
