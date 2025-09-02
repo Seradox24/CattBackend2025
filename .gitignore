@@ -64,6 +64,7 @@ db.sqlite3-journal
 staticfiles/
 theme/static_src/node_modules/
 
+
 # Flask stuff:
 instance/
 .webassets-cache
