@@ -11,6 +11,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+!theme/static/css/dist/
 downloads/
 eggs/
 .eggs/
@@ -60,8 +61,9 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media/
 staticfiles/
+theme/static_src/node_modules/
+
 
 # Flask stuff:
 instance/
